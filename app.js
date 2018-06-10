@@ -26,6 +26,15 @@
 // }
 // window.sayHello();
 
-console.log(module); // module is not a global object // every file is a module
+// console.log(module); // module is not a global object // every file is a module
 
-//22:50
+// mostly use const instead of var
+const logger1 = require('./logger');
+
+// console.log(logger1);
+
+logger1.log('message');
+
+// Another way to do it if it is a function
+// const log = require('./logger');
+// log('message1');
