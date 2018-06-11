@@ -33,8 +33,8 @@ const logger1 = require('./logger');
 
 // console.log(logger1);
 
-logger1.log('message');
+// when it is not a function
+// logger1.log('message');
 
 // Another way to do it if it is a function
-// const log = require('./logger');
-// log('message1');
+logger1('message1');
