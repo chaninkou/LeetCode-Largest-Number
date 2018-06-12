@@ -28,13 +28,30 @@
 
 // console.log(module); // module is not a global object // every file is a module
 
-// mostly use const instead of var
-const logger1 = require('./logger');
+// // mostly use const instead of var
+// const logger1 = require('./logger');
 
-// console.log(logger1);
+// // console.log(logger1);
 
-// when it is not a function
-// logger1.log('message');
+// // when it is not a function
+// // logger1.log('message');
 
-// Another way to do it if it is a function
-logger1('message1');
+// // Another way to do it if it is a function
+// logger1('message1');
+
+// const path = require('path');
+
+// var pathOjbect = path.parse(__filename);
+
+// console.log(pathOjbect);
+
+const os = require('os');
+
+var totalMemory = os.totalmem();
+var freeMemory = os.freemem();
+
+// console.log('total memory: ' + totalMemory);
+
+// On the server, to get the operator, javascript couldn't do it
+console.log(`Total Memory: ${totalMemory}`);
+console.log(`Free Memory: ${freeMemory}`);
