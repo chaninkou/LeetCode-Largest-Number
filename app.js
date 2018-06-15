@@ -55,3 +55,8 @@ var freeMemory = os.freemem();
 // On the server, to get the operator, javascript couldn't do it
 console.log(`Total Memory: ${totalMemory}`);
 console.log(`Free Memory: ${freeMemory}`);
+
+
+
+
+
