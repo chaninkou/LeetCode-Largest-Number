@@ -27,8 +27,12 @@ public class FindLargestStringNumberFunction {
             holder[i] = String.valueOf(nums[i]);
         }
         
+        System.out.println(Arrays.toString(holder));
+        
         // Sort by comparing them
         Arrays.sort(holder, (s1,s2) -> (s2 + s1).compareTo(s1 + s2));
+        
+        System.out.println(Arrays.toString(holder));
         
         // if {0,0} should return 0 only, not "00"
         if(holder[0].charAt(0) == '0'){
