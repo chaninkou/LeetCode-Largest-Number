@@ -34,7 +34,7 @@ public class FindLargestStringNumberFunction {
         
         System.out.println(Arrays.toString(holder));
         
-        // if {0,0} should return 0 only, not "00"
+        // if {0,0} should return 0 only, not 00
         if(holder[0].charAt(0) == '0'){
         	return "0";
         }
